@@ -1,7 +1,7 @@
-const removeFromArray = function(a,...b) {
+const removeFromArray = function(array,...args) {
     const checkArray = [];
-    a.forEach((item) => {
-        if (!b.includes(item)) {
+    array.forEach((item) => {
+        if (!args.includes(item)) {
             checkArray.push(item);
           });
     return checkArray;
